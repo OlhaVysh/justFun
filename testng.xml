@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MySuite">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test name="First">
+        <classes>
+            <class name="TestDemo">
+                <methods>
+                    <include name="firstTestCase"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Second">
+        <classes>
+            <class name="TestDemo">
+                <methods>
+                    <include name="secondTestCase"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
